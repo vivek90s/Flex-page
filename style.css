@@ -42,7 +42,7 @@ a{
    transition: 0.5s ease;
 }
 a:hover{
-    color: var(--pink);
+    color: var(--dark-blue);
  }
 
  span{
@@ -51,7 +51,7 @@ a:hover{
      transition: 0.5s ease;
  }
  span:hover{
-    color: var(--pink);
+    color: var(--dark-blue);
 }
 
 li{
@@ -82,7 +82,6 @@ header .logo {
 }
 
 header nav {
-    overflow: hidden;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -93,15 +92,16 @@ header nav {
 
 header nav ul {
     display: flex;
+    flex-direction: row;
     margin: 0;
     padding: 0;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 header nav ul li a {
     display: block;
     color: var(--dark-blue);
-    padding: 0 1.25rem;
+    padding: 0 1.2rem;
     font-weight: 700;
     font-size: 0.75rem;
 }
@@ -110,6 +110,11 @@ header nav ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.hero .section-container .content .cool-illustration  {
+     width: 300px;
+     height: 250px;
 }
 
 .hero .section-container h1 {
@@ -167,15 +172,21 @@ header nav ul li a {
 
 .features .box-image.one{
     background: var(--light-blue);
-    
+    display: flex;
+    justify-content: center;
 }
 
 .features .box-image.two{
     background: var(--yellow);
+    display: flex;
+    justify-content: center;
 }
 
 .features .box-image.three{
     background: var(--pink);
+    display: flex;
+    justify-content: center;
+    
 }
 
 .cta{
@@ -290,6 +301,18 @@ footer ul li a{
         justify-content: space-between;
         align-items: center;
     }
+    
+.hero .section-container .content .cool-illustration  {
+    width: 400px;
+    height: 350px;
+}
+
+.features .box .box-image {
+    max-width: 380px;
+    display: flex;
+    margin: 0 auto;
+}
+
 
     .hero,
     .how-it-works{
@@ -302,26 +325,6 @@ footer ul li a{
         margin:  0 auto;
     }
 
-    .features .box-content{
-      
-        max-width: 560px;
-        margin: 0 auto;
-        
-    }
-    
-    .features  .features-container{
-        align-items: center;
-        justify-content: center;
-    }
-
-    .features .features-container:nth-child(2){
-        flex-direction: row-reverse;
-    }
-    .features .box, .features .box-image{
-       max-width: 50%;
-        padding: 4rem;
-        margin-left: 20%;
-    }
   
     .cta{
         text-align: center;
